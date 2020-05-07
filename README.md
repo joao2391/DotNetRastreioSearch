@@ -1,6 +1,6 @@
 # DotNetRastreioSearch
 
-[![Nuget](https://img.shields.io/nuget/v/DotNetRastreioSearch)](https://www.nuget.org/packages/DotNetCEPSearch/) ![Nuget](https://img.shields.io/nuget/dt/DotNetRastreioSearch)
+[![Nuget](https://img.shields.io/nuget/v/DotNetRastreioSearch)](https://www.nuget.org/packages/DotNetRastreioSearch/) ![Nuget](https://img.shields.io/nuget/dt/DotNetRastreioSearch)
 
 It is a library that helps you to track your objects in Correios
 
