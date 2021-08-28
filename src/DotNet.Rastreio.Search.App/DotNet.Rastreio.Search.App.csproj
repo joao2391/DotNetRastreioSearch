@@ -1,7 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>netstandard2.0</TargetFramework>
+    <TargetFramework>net5.0</TargetFramework>
     <PackageId>DotNetRastreioSearch</PackageId>
     <Authors>João Paulo de Castro Lima</Authors>
     <Company>joao2391</Company>

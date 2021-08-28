@@ -2,13 +2,13 @@ using DotNet.Rastreio.Search.App;
 using NUnit.Framework;
 using System.Threading.Tasks;
 
-namespace Tests
+namespace DotNet.Rastreio.Search.Tests
 {
     public class RastreioSearchTests
     {
 
         RastreioSearch _rastreio;
-        string codigoRastreio = "12515520";
+        string codigoRastreio = "020202";
 
         [SetUp]
         public void Setup()
