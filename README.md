@@ -1,17 +1,17 @@
-# DotNetRastreioSearh
+# DotNetRastreioSearh  [![Nuget](https://img.shields.io/nuget/v/DotNetRastreioSearch)](https://www.nuget.org/packages/DotNetRastreioSearch/) ![Nuget](https://img.shields.io/nuget/dt/DotNetRastreioSearch)
 It is a library that helps you to track your objects in Correios
 
 ## Notes
-Version 1.0.0:
+Version 1.0.1:
 
-None
+- Upgrade to .NET 6
 
 ## Installation
 
 Use the package manager to install.
 
 ```bash
-Install-Package DotNetRastreioSearch -Version 1.0.0
+Install-Package DotNetRastreioSearch -Version 1.0.1
 ```
 
 ## Usage

@@ -1,7 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>net5.0</TargetFramework>
+    <TargetFramework>net6.0</TargetFramework>
     <PackageId>DotNetRastreioSearch</PackageId>
     <Authors>João Paulo de Castro Lima</Authors>
     <Company>joao2391</Company>
@@ -13,6 +13,7 @@
     <RepositoryType>Git</RepositoryType>
     <PackageTags>webcrawling; webscrap; cep; correios; dotnetcore; dotnetstandard;</PackageTags>
     <PackageReleaseNotes>Beta Version</PackageReleaseNotes>
+	<Version>1.0.1</Version>
   </PropertyGroup>
 
   <ItemGroup>

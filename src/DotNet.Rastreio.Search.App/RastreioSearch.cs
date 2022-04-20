@@ -107,9 +107,9 @@ namespace DotNet.Rastreio.Search.App
             {
                 throw htmlEx;
             }
-            catch (Exception ex)
+            catch (Exception)
             {
-                throw ex;
+                throw;
             }
 
 
@@ -196,9 +196,9 @@ namespace DotNet.Rastreio.Search.App
             {
                 throw htmlEx;
             }
-            catch (Exception ex)
+            catch (Exception)
             {
-                throw ex;
+                throw;
             }
         }
     }

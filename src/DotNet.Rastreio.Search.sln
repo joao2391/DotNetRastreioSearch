@@ -5,7 +5,7 @@ VisualStudioVersion = 15.0.28307.1082
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DotNet.Rastreio.Search.App", "DotNet.Rastreio.Search.App\DotNet.Rastreio.Search.App.csproj", "{C5BE1A38-272C-49C4-A192-F6E991923E80}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DotNet.Rastreio.Search.Test", "..\tests\DotNet.Rastreio.Search.Test\DotNet.Rastreio.Search.Test.csproj", "{09874ABB-0872-4018-99AE-7F134F87D2FF}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DotNet.Rastreio.Search.Test", "..\tests\DotNet.Rastreio.Search.Test\DotNet.Rastreio.Search.Tests.csproj", "{09874ABB-0872-4018-99AE-7F134F87D2FF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
