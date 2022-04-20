@@ -5,7 +5,10 @@ using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
 using System.Net.Http;
+using System.Net;
 using System.Threading.Tasks;
+using System.Net.Security;
+using System.Security.Cryptography.X509Certificates;
 
 namespace DotNet.Rastreio.Search.App
 {
@@ -14,6 +17,13 @@ namespace DotNet.Rastreio.Search.App
     /// </summary>
     public class RastreioSearch : BaseRastreioSearch, IRastreioSearch
     {
+        public RastreioSearch()
+        {
+            ServicePointManager.ServerCertificateValidationCallback =  delegate (object sender, X509Certificate certificate, X509Chain chain, SslPolicyErrors sslPolicyErrors) 
+            { 
+                return true; 
+            };
+        }
         /// <summary>
         /// Retorna o Status do objeto rastreado
         /// </summary>
@@ -25,6 +35,8 @@ namespace DotNet.Rastreio.Search.App
 
             try
             {
+                
+
                 Dictionary<string, string> dict = new Dictionary<string, string>
                 {
                     { "acao", "track" },
@@ -95,9 +107,9 @@ namespace DotNet.Rastreio.Search.App
             {
                 throw htmlEx;
             }
-            catch (Exception ex)
+            catch (Exception)
             {
-                throw ex;
+                throw;
             }
 
 
@@ -184,9 +196,9 @@ namespace DotNet.Rastreio.Search.App
             {
                 throw htmlEx;
             }
-            catch (Exception ex)
+            catch (Exception)
             {
-                throw ex;
+                throw;
             }
         }
     }

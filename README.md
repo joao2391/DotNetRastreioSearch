@@ -6,16 +6,16 @@ It is a library that helps you to track your objects in Correios.
 You can use both in .NET Framework 4.x and .NET Core 2.x applications.
 
 ## Notes
-Version 1.0.0:
+Version 1.0.1:
 
-None
+- Upgrade to .NET 6
 
 ## Installation
 
 Use the package manager to install.
 
 ```bash
-Install-Package DotNetRastreioSearch -Version 1.0.0
+Install-Package DotNetRastreioSearch -Version 1.0.1
 ```
 
 ## Usage
