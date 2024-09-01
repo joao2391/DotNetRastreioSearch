@@ -8,7 +8,7 @@ namespace DotNet.Rastreio.Search.Tests
     {
 
         RastreioSearch _rastreio;
-        string codigoRastreio = "020202";
+        string codigoRastreio = "AA123456785BR";
 
         [SetUp]
         public void Setup()
