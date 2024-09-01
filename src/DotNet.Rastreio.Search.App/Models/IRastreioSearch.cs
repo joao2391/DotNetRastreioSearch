@@ -2,7 +2,7 @@
 
 namespace DotNet.Rastreio.Search.App.Models
 {
-    internal interface IRastreioSearch
+    public interface IRastreioSearch
     {
         Task<string> GetObjetoRastreioAsync(string codigoRastreio);
 
