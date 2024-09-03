@@ -25,7 +25,7 @@ namespace DotNet.Rastreio.Search.Tests
                 {
                     Cidade = "Unidade de Distribuição - Sao Paulo / SP", 
                     Data = "27/06/2024",
-                    Hora = "Hora: 14:01",
+                    Hora = "14:01",
                     Status = "Objeto entregue ao destinatário"
                 }
             );
@@ -35,26 +35,27 @@ namespace DotNet.Rastreio.Search.Tests
         public async Task Should_Return_Non_Empty_String_Async()
         {
             var mock = new Mock<IRastreioSearch>();
-            var mockResponse = JsonConvert.SerializeObject(_responseRastreio);
-            mock.Setup(x => x.GetObjetoRastreioAsync(codigoRastreio)).ReturnsAsync(mockResponse);
+
+            mock.Setup(x => x.GetObjetoRastreioAsync(codigoRastreio)).ReturnsAsync(_responseRastreio);
             _rastreio = mock.Object;
 
             var result = await _rastreio.GetObjetoRastreioAsync(codigoRastreio);
 
-            Assert.IsTrue(!string.IsNullOrEmpty(result));
+            Assert.IsInstanceOf(typeof(ResponseRastreio), result);
+            Assert.IsNotNull(result.History);
         }
 
         [Test]
         public void Should_Return_Non_Empty_String()
         {
             var mock = new Mock<IRastreioSearch>();
-            var mockResponse = JsonConvert.SerializeObject(_responseRastreio);
-            mock.Setup(x => x.GetObjetoRastreio(codigoRastreio)).Returns(mockResponse);
+            mock.Setup(x => x.GetObjetoRastreio(codigoRastreio)).Returns(It.IsAny<ResponseRastreio>());
             _rastreio = mock.Object;
 
             var result = _rastreio.GetObjetoRastreio(codigoRastreio);
 
-            Assert.IsTrue(!string.IsNullOrEmpty(result));
+            Assert.IsInstanceOf(typeof(ResponseRastreio), result);
+            Assert.IsNotNull(result.History);
         }
     }
 }
