@@ -1,3 +1,5 @@
+> ⚠️ THIS LIB IS UNDER MAINTENANCE
+
 # DotNetRastreioSearch
 
 [![Nuget](https://img.shields.io/nuget/v/DotNetRastreioSearch)](https://www.nuget.org/packages/DotNetRastreioSearch/) ![Nuget](https://img.shields.io/nuget/dt/DotNetRastreioSearch)
