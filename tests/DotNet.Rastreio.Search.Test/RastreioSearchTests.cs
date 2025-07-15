@@ -36,6 +36,9 @@ namespace DotNet.Rastreio.Search.Tests
         {
             var mock = new Mock<IRastreioSearch>();
 
+            var search = new RastreioSearch();
+            await search.GetObjetoRastreioAsync(codigoRastreio);
+
             mock.Setup(x => x.GetObjetoRastreioAsync(codigoRastreio)).ReturnsAsync(_responseRastreio);
             _rastreio = mock.Object;
 
